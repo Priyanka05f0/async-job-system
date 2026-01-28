@@ -1,0 +1,21 @@
+{
+  "name": "async-job-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "start-worker": "node src/worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "nodemailer": "^7.0.13",
+    "pg": "^8.17.2",
+    "uuid": "^8.3.2"
+  }
+}

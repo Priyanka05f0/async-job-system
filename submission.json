@@ -1,0 +1,21 @@
+{
+  "project_name": "Asynchronous Job Processing System",
+  "language": "Node.js",
+  "description": "An asynchronous background job processing system using Redis, PostgreSQL, and Docker Compose. Jobs are created via REST API, queued in Redis, processed by a worker, and tracked using database-backed job status with retry support.",
+  "how_to_run": "Use `docker compose up -d` from the project root. Then create jobs via POST http://localhost:3000/jobs and check status via GET http://localhost:3000/jobs/{job_id}.",
+  "features": [
+    "REST API for job creation and status tracking",
+    "Redis-based job queue",
+    "Background worker for asynchronous processing",
+    "CSV generation job",
+    "Retry mechanism for failed jobs",
+    "PostgreSQL-backed job metadata storage",
+    "Fully containerized using Docker Compose"
+  ],
+  "services": {
+    "app": "API service for job creation and querying",
+    "worker": "Background job processor",
+    "db": "PostgreSQL database",
+    "redis": "Redis queue service"
+  }
+}
