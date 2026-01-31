@@ -17,6 +17,14 @@ It demonstrates how long-running tasks can be handled outside the main HTTP requ
 
 ---
 
+## Key Features
+- Asynchronous job processing
+- Retry mechanism with failure handling
+- Dead Letter Queue (DLQ)
+- Idempotent job execution
+- Structured logging
+- Graceful worker shutdown
+
 ## Tech Stack
 
 | Component | Technology |
